@@ -13,7 +13,7 @@ class Plugin extends PluginBase
             'name'        => 'poptin.poptin::lang.plugin.name',
             'description' => 'poptin.poptin::lang.plugin.description',
             'author'      => 'poptin.poptin::lang.plugin.author',
-            'icon'        => 'plugins/poptin/poptin/poptin-logo.svg'
+            'iconSvg'     => 'plugins/poptin/poptin/assets/images/poptin-logo.svg'
         ];
     }
 
@@ -90,7 +90,7 @@ class Plugin extends PluginBase
             'popup' => [
                 'label'       => 'poptin.poptin::lang.plugin.name',
                 'url'         => Backend::url('poptin/poptin/info'),
-                'iconSvg'        => 'plugins/poptin/poptin/poptin-logo.svg',
+                'iconSvg'     => 'plugins/poptin/poptin/assets/images/poptin-logo.svg',
                 'permissions' => ['poptin.poptin.*'],
                 'order'       => 500,
             ],

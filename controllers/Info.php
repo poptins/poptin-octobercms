@@ -56,6 +56,7 @@ class Info extends Controller
             $popup_info = json_decode($popup_info,true);
          
             if(!empty($popup_info)){
+                $client_id = $popup_info['client_id'];
                 if($popup_info['user_id'] == ''){
                     $without_token = 'show';
                     $with_token = 'hide';
@@ -76,7 +77,7 @@ class Info extends Controller
                 $dash_status = 'hide';
                 $show_dashboard = 'hide';
             }
-            $client_id = $popup_info['client_id'];
+            
         }
         $this->vars['sh_status'] = $sh_status;
         $this->vars['dash_status'] = $dash_status;
