@@ -1,0 +1,4 @@
+name: Info
+form: $/poptin/poptin/models/info/fields.yaml
+modelClass: Poptin\Poptin\Models\Info
+defaultRedirect: poptin/poptin/info

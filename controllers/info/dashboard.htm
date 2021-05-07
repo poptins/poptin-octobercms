@@ -1,0 +1,414 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+</head>
+<body>
+
+	   
+      <div id="poptin_main">
+		
+		 <div class="poptinLogo <?= $btm_section ?>"><img src="<?= url('/plugins/poptin/poptin/assets/images/poptinlogo.png') ?>" alt="" > </div>
+		 <div class="poptin_logged indirect <?= $show_dashboard ?>">
+			<div class="poptin_logged_box">
+				<h2>You're all set 🎉</h2>
+				<div class="tinyborder"></div>
+				<span class="everythinglooks">Click on the button below<br>to manage your poptins</span>
+				<img src="<?= url('/plugins/poptin/poptin/assets/images/vicon.png') ?>" alt="">
+				<a href="../../../poptin/poptin/info/goTODashboard"   class="ppcontrolpanel goto_dashboard_button_pp_updatable with_token <?= $with_token ?>" target="_blank">Go to Dashboard</a>
+				<a href="http://app.popt.in/login"  class="ppcontrolpanel goto_dashboard_button_pp_updatable without_token <?= $without_token ?>" target="_blank">Go to Dashboard</a>
+				
+				<a href="javascript:void(0)" class="pplogout" >Deactivate Poptin</a>
+                <input type="hidden" name="client_id" id="client_id" value="<?= $client_id ?>"/>
+			 </div>
+			
+		 </div>
+		  <div class="poptin_logged <?= $dash_status ?>">
+			 
+			 <embed src="../../../poptin/poptin/info/goTODashboard" width="100%" height="100%" class="with_token <?= $with_token ?>" >
+			 <embed src="http://app.popt.in/login" width="100%" height="100%" class="without_token <?= $without_token ?>">
+			
+			 
+		  </div>
+		  
+		  <div class="poptin-overlay" style="display: none;"></div>
+         <div class="poptin_forms poptin_registration <?= $sh_status ?>">
+            <div class="pforms_wrap register_form">
+               <div class="pforms_wrap_inner">
+                  <div class="pforms_head">
+                     <ul>
+                        <li>
+                           <h3>Sign up for free</h3>
+                        </li>
+                        <li><a href="#" id="login_form">Already have an account?</a></li>
+                     </ul>
+                  </div>
+                  <!--/pforms_head-->
+                  <div class="form_box">
+                  
+                   <?= Form::open(['class' => 'layout','id' =>'register']) ?>
+                     <input type="text" id="popin_email" class="input_box" name="email" placeholder="Enter your email">
+                     <div class="bottom_form">
+                        <input type="submit" value="Sign Up"  class="ppsubmit">
+                     </div>
+                     <?= Form::close() ?>
+                     
+                  </div>
+               </div>
+               <!--/pforms_wrap_inner-->        
+            </div>
+            <!--/register_form-->
+            <div class="pforms_wrap login_form" style="display:none;">
+               <div class="pforms_wrap_inner">
+                  <div class="pforms_head">
+                     <ul>
+                        <li>
+                           <h3>Enter your user ID</h3>
+                        </li>
+                        <li><a href="#" id="register_form">Sign up for free</a></li>
+                     </ul>
+                  </div>
+                  <!--/pforms_head-->
+                  <div class="form_box">
+                   
+                   
+                   <?= Form::open(['class' => 'layout','id' =>'login']) ?>
+                     <input type="text" class="input_box" id="user_id" name="user_id" placeholder="Enter your User ID" />
+                     <div class="bottom_form">
+                        <a class="wheremyid " href="javascript:void(0)" data-toggle="modal" >Where is my user ID? </a>
+                        <input type="submit" value="Connect" class="pplogin" />                                        
+                     </div>
+                      <?= Form::close() ?>
+                  </div>
+               </div>
+               <!--/pforms_wrap_inner-->        
+            </div>
+            <!--/register_form-->
+         </div>
+         <!--/logo-->
+         <!--/poptin_forms-->        
+         <div class="poptin_content  <?= $sh_status ?> poptin_registration video_sec">
+            <h2>Create your first poptin with ease</h2>
+            <div class="tinyborder"></div>
+            <div class="pvideo_box">
+               <div class="pvideo_box_in">
+                  <div style="width:100%;height:100%;width: 905px; height: 509px; float: none; clear: both; margin: 2px auto;">
+                     <embed src="http://www.youtube.com/embed/uvTw_mmA32Q"  width="100%" height="100%" allowfullscreen="true" title="Adobe Flash Player">
+                  </div>
+               </div>
+               <!--/pvideo_box_in--->
+            </div>
+            <!--/pvideo_box-->
+         </div>
+         <!--/poptin_content-->
+         <div class="poptin_content whychoose_sec poptin_registration <?= $sh_status ?>">
+            <h2>Here's What Poptin Can Do For You</h2>
+            <div class="tinyborder"></div>
+            <div class="pcontent_in">
+               <div class="whychoose_list">
+                 <ul>
+				<li>
+				<div class="box boxEnv">
+				<div class="boxIcon"><img src="<?= url('/plugins/poptin/poptin/assets/images/heart_new.png') ?>" alt="" class="choose_icn" />
+				<img src="<?= url('/plugins/poptin/poptin/assets/images/integration-mailchimp-icon1_new.png') ?>" alt=""  class="choose_icn_h" /></div>
+				<h3>Increase visitors’<br>engagement</h3>
+				<p>With Poptin you can conduct surveys, get feedback and offer visitors another content item they will be interested in.</p>
+				</div>
+				</li>
+				<li>
+				<div class="box boxLeads">
+				<div class="boxIcon"><img src="<?= url('/plugins/poptin/poptin/assets/images/envelope_new.png') ?>" alt="" class="choose_icn"  />
+				<img src="<?= url('/plugins/poptin/poptin/assets/images/open-envelope_new.png') ?>" alt=""   class="choose_icn_h" /></div>
+				<h3>Get more email<br>subscribers</h3>
+				<p>Improve subscription rates up to several times using poptins displayed at the right moment.</p>
+				</div>
+				</li>
+				<li>
+				<div class="box boxCart">
+				<div class="boxIcon"><img src="<?= url('/plugins/poptin/poptin/assets/images/leads-icon_new.png') ?>" alt=""  class="choose_icn" />
+				<img src="<?= url('/plugins/poptin/poptin/assets/images/leads-icon-hover_new.png') ?>" alt=""  class="choose_icn_h"  /></div>
+				<h3>Capture more leads<br>and sales</h3>
+				<p>Serve visitors relevant offers based on their unique behavior and substantially improve conversion rates.</p>
+				</div>
+				</li>
+				<li>
+				<div class="box boxHeart">
+				<div class="boxIcon"><img src="<?= url('/plugins/poptin/poptin/assets/images/cart-icon_new.png') ?>" alt=""  class="choose_icn" />
+				<img src="<?= url('/plugins/poptin/poptin/assets/images/car-hover-icon_new.png') ?>" alt=""   class="choose_icn_h" /></div>
+				<h3>Reduce shopping cart<br>abandonment</h3>
+				<p>A potential customer is planning to ditch their shopping cart? Pop them an offer they can’t refuse and increase the number.</p>
+				</div>
+				</li>
+				</ul>
+               </div>
+               <!--/whychoose_list-->    
+            </div>
+            <!--/pcontent_in-->                
+         </div>
+         <!--/poptin_content-->
+         <div class="poptin_content digital_marketers <?= $sh_status ?>  poptin_registration">
+            <h2>Digital Marketers ♥ Poptin</h2>
+            <div class="tinyborder"></div>
+            <div class="pcontent_in">
+               <div class="cfedbak_list">
+                  <ul>
+                     <li>
+                        <div class="box client1">
+                           <div class="box_head">
+                              <img src="<?= url('/plugins/poptin/poptin/assets/images/profile1.png') ?>" alt=""  />
+                           </div>
+                           <!--head-->
+                           <div class="clientboxtext">
+                              <h4>Michael Kamleitner</h4>
+                              <h6>CEO, Walls.io</h6>
+                              <p>Getting started with poptin was a breeze – we've implemented the widget and connected it to our newsletter within minutes. Our conversion rate skyrocketed! </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="box client2">
+                           <div class="box_head">
+                              <img src="<?= url('/plugins/poptin/poptin/assets/images/profile2.png') ?>" alt=""  />
+                           </div>
+                           <!--head-->
+                           <div class="clientboxtext">
+                              <h4>Deepak Shukla</h4>
+                              <h6>CEO, Purr Traffic</h6>
+                              <p>Been v.impressed with Poptin and the team behind it so far. Great responses times from support. The roadmap looks great. I highly recommend.  </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="box client3">
+                           <div class="box_head">
+                              <img src="<?= url('/plugins/poptin/poptin/assets/images/profile3.png') ?>" alt=""  />
+                           </div>
+                           <!--head-->
+                           <div class="clientboxtext">
+                              <h4>Michael Voiskoun</h4>
+                              <h6>Marketing manager, Engie</h6>
+                              <p>It's super easy to use, doesn't require any prior coding skill. The team at Poptin is really helpful, providing great support, and adding always more features!  </p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <!--/whychoose_list-->    
+            </div>
+            <!--/pcontent_in-->                
+         </div>
+         <!--/poptin_content-->
+         
+         <!--/poptin_content-->
+         <div class="poptin_footer <?= $btm_section ?>">
+            <div class="poptin_footer_img">
+               <img class="normal_img parrot" src="<?= url('/plugins/poptin/poptin/assets/images/parrot.png') ?>" alt=""  />
+               <img class="hover_img parrot" src="<?= url('/plugins/poptin/poptin/assets/images/parrot.gif') ?>" alt=""  />
+            </div>
+            <h6>Visit us at <a href="http://www.poptin.com/?utm_source=octobercms" target="_blank">poptin.com</a></h6>
+         </div>
+         <div class="modal fade whereis_myid hide " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="true">
+            <div class="modal-dialog modal-lg" role="document">
+                
+               <div class="modal-content ">
+               <div class="modal-header">
+
+                     <button type="button" class="close_bybye close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  <h4>Where is my user ID?</h4>
+                  <div class="myid_list">
+                     <div class="row">
+                        <div class="col-sm-4">
+                           <div class="id_box">
+                              <div class="id_box_img"><img src="<?= url('/plugins/poptin/poptin/assets/images/where-is-my-id-01.png') ?>" alt=""  /></div>
+                              <p><strong>1.</strong>  Go to your dashboard and click on "Settings" in the top bar</p>
+                           </div>
+                           <!--/id_box-->
+                        </div>
+                        <!--/col-4-->
+                        <div class="col-sm-4">
+                           <div class="id_box">
+                              <div class="id_box_img"><img src="<?= url('/plugins/poptin/poptin/assets/images/where-is-my-id-02.png') ?>" alt=""  /></div>
+                              <p><strong>2.</strong> Click on Profile </p>
+                           </div>
+                           <!--/id_box-->
+                        </div>
+                        <!--/col-4-->
+                        <div class="col-sm-4">
+                           <div class="id_box">
+                              <div class="id_box_img"><img src="<?= url('/plugins/poptin/poptin/assets/images/where-is-my-id-03.png') ?>" alt=""  /></div>
+                              <p><strong>3.</strong> Copy your user ID </p>
+                           </div>
+                           <!--/id_box-->
+                        </div>
+                        <!--/col-4-->
+                     </div>
+                  </div>
+                  <!--/myid_list-->
+                  <div class="popup_down">
+                     <div class="poptup_button"><a href="javascript:void(0)" class="close_where" data-dismiss="modal" aria-label="Close">Close</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/whereis_myid-->
+         <div class="modal fade lookfamiliar hide" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="true">
+            <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-content">
+               <div class="modal-header">
+
+                     <button type="button" class="close_lookfamiliar close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  <img class="poptin-parrot-makingsure-image" src="<?= url('/plugins/poptin/poptin/assets/images/parrot-familiar.png') ?> ">
+                  <h4>You look familiar</h4>
+                  <p>You already have a Poptin account with this email address. </p>
+                  <div class="popup_down">
+                     <div class="poptup_button"><a href="http://app.popt.in/login" target="_blank">Login</a></div>
+                     <a href="javascript:void(0)" class="close_lookfamiliar" data-dismiss="modal" aria-label="Close">Cancel</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/lookfamiliar-->
+         <div class="modal fade hide oopsiewrongemailid" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="true">
+            <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-content">
+               <div class="modal-header">
+
+                     <button type="button" class="close_oopsiewrongemailid close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  <img class="poptin-parrot-makingsure-image" src="<?= url('/plugins/poptin/poptin/assets/images/parrot-oopsie.svg') ?>">
+                  <h4>Oopsie... wrong Email</h4>
+                  <p>Please enter a valid Email Address.  </p>
+                  <div class="popup_down">
+                     <div class="poptup_button"><a href="javascript:void(0)" class="close_oopsiewrongemailid" data-dismiss="modal" aria-label="Close">Try again</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/oopsiewrongid-->
+         <div class="modal fade hide oopsiewrongid" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="true">
+            <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-content">
+               <div class="modal-header">
+
+                     <button type="button" class="close_oopsiewrongid close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  <img class="poptin-parrot-makingsure-image" src="<?= url('/plugins/poptin/poptin/assets/images/parrot-oopsie.svg') ?>">
+                  <h4>Oopsie... wrong ID</h4>
+                  <p><a href="javascript:void(0)" class="poptin-lightbox-atag where-is-my-id-inside-lb wheremyid" data-toggle="modal">Where is my user ID?</a></p>
+                  <div class="popup_down">
+                     <div class="poptup_button"><a href="javascript:void(0)"  class="close_oopsiewrongid" data-dismiss="modal" aria-label="Close">Try again</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/oopsiewrongid-->
+         <div class="modal fade hide" id="deactivate_poptin_popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="true">
+            <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-content">
+               <div class="modal-header">
+
+                     <button type="button" class="close_confirm close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  <img class="poptin-parrot-makingsure-image" src="<?= url('/plugins/poptin/poptin/assets/images/parrot-making-sure.png') ?>">
+                  <h4>Just making sure</h4>
+                  <p>Are you sure you want to <br /> remove Poptin? </p>
+                  <div class="popup_down">
+                   
+					 <input type="hidden" id="deactivate_url" value=""/>
+                     <div class="poptup_button"><a href="javascript:void(0)" class="pplogout1">Yes</a></div>
+                     <a href="javascript:void(0)" data-dismiss="modal" aria-label="Close" class="close_confirm">I'll stay</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--a href="' . $base_url . '/poptinbye/js" class="ppbye ctools-use-modal hidediv">Bye Bye</a>
+            <a href="' . $base_url . '/poptinacctexists/js" class="ppexists ctools-use-modal hidediv">exists</a-->
+         <!--/deactivate_poptin_popup-->
+         <div class="modal hide fade byebyeModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="true">
+            <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-content">
+               <div class="modal-header">
+
+                     <button type="button" class="close_bybye close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  <img class="poptin-parrot-byebye-image" src="<?= url('/plugins/poptin/poptin/assets/images/parrot-bye-bye.png') ?>">  
+                  <h4>Bye Bye</h4>
+                  <p>Poptin snippet has been <br /> removed. See you around. </p>
+                  <div class="popup_down">
+                     <div class="poptup_button"><a href="javascript:void(0)" class="close_bybye" data-dismiss="modal" aria-label="Close">Close</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/byebyeModal-->
+     
+      <div class="swal-overlay swal_d_display swal-overlay--show-modal" tabindex="-1">
+         <div class="swal-modal" role="dialog" aria-modal="true">
+            <div class="swal-icon swal-icon--error">
+               <div class="swal-icon--error__x-mark">
+                  <span class="swal-icon--error__line swal-icon--error__line--left"></span>
+                  <span class="swal-icon--error__line swal-icon--error__line--right"></span>
+               </div>
+            </div>
+			<img class="poptin-parrot-invalid-image" src="<?= url('/plugins/poptin/poptin/assets/images/standing_mascot.png') ?>"> 
+            <div class="swal-title">Error</div>
+            <div class="swal-text">The email must be a valid email address.</div>
+            <div class="swal-footer">
+               <div class="swal-button-container">
+                  <button class="swal-button swal-button--confirm">OK</button>
+                  <div class="swal-button__loader">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	   </div>
+<div class="overlay">
+	<div class="center-ovelay">Please wait .....</div>
+</div>
+	 
+	  <style>
+	  
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99;
+        display:none;
+    }
+    .center-ovelay {
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        height: 30px;
+    }
+	</style>
+    <script>
+      top.document.title = 'Poptin for OctoberCMS';
+    </script>
+    </body>
+    </html>
