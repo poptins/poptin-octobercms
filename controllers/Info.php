@@ -127,7 +127,7 @@ class Info extends Controller
              }
               $permission_msg="you don't have permission to access.";
               $api_url="https://app.popt.in/api/marketplace/";
-              $marketplace="octobercms";
+              $marketplace="octcms";
               $data = "email=" . $email. "&marketplace=" . $marketplace;
               $url = $api_url."register";
               $response=$this->APICall($url,$data);
