@@ -1,3 +1,5 @@
 1.0.1:
     - 'Initialize plugin.'
     - builder_table_create_poptin_poptin_info.php
+1.0.2:
+    - Added Poptin to the menu in the settings page

@@ -4,6 +4,7 @@ use Backend;
 use Event;
 use Db;
 use System\Classes\PluginBase;
+use System\Classes\SettingsManager;
 
 class Plugin extends PluginBase
 {
@@ -94,6 +95,20 @@ class Plugin extends PluginBase
                 'permissions' => ['poptin.poptin.*'],
                 'order'       => 500,
             ],
+        ];
+    }
+    
+     public function registerSettings() {
+        return [
+            'config' => [
+                'label'       => 'poptin.poptin::lang.plugin.name',
+                'description' => '',
+                'category'    => SettingsManager::CATEGORY_CMS,
+                'url'         => Backend::url('poptin/poptin/info'),
+                'icon'        => 'icon-gear',
+                'permissions' => ['poptin.poptin.*'],
+                'order'       => 500,
+            ]
         ];
     }
 }
