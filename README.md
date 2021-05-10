@@ -1,7 +1,7 @@
 # Poptin Pop Ups and Forms
 #### Convert visitors into sales, leads, and email subscribers with engaging website pop ups and contact forms
 
-__[Create a free Poptin account now >>](https://www.poptin.com/?utm_source=octobercms)__
+[__Create your free Poptin account now >>__](https://app.popt.in/register/?utm_source=octobercms)
 
 ![Poptinbanner](https://www.poptin.com/octobercms/poptin-octobercms-banner.png)
 
@@ -23,13 +23,14 @@ Poptin is a complete hub for all your website conversion needs, from __smart tri
 * Enjoy Poptin’s user-friendly interface and __create pop ups and forms in minutes__
 * Create [any type of popup](https://www.poptin.com/gallery/?utm_source=octobercms) __compatible with any device__ (lightboxes, overlays, slide-ins, countdown pop ups, mobile pop ups, video pop ups, social widgets, email forms, and more)
 * Sync your poptins with your favorite email or CRM software to experience __seamless marketing integration__
-* Reduce high cart abandonment rates with Poptin’s __[exit-intent technology](https://www.poptin.com/blog/exit-intent-technology-can-grow-business/?utm_source=octobercms)__
+* Reduce high cart abandonment rates with Poptin’s [__exit-intent technology__](https://www.poptin.com/blog/exit-intent-technology-can-grow-business/?utm_source=octobercms)
 * __Create your own autoresponders__ to continue engagement on email
 * Utilize __smart triggers and targeting rules__ to effectively convert more qualified leads
 * Improve your tactics and understand your customers with __A/B testing and built-in analytics__
 * Reliable and friendly customer support
 
 ## Getting Started with Poptin
+[__Create your free Poptin account now >>__](https://app.popt.in/register/?utm_source=octobercms)
 !![560x315](//www.youtube.com/embed/uvTw_mmA32Q)
 
 ## License
